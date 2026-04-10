@@ -1,0 +1,9 @@
+@use "../helpers" as *;
+
+.logo {
+  max-width: fluid(179, 126);
+  &:hover {
+    opacity: 0.65;
+    transition-duration: var(--transition-duration);
+  }
+}
