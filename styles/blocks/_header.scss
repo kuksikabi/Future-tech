@@ -63,6 +63,7 @@
       @include mobile {
         flex-direction: column;
         row-gap: 1rem;
+        text-align: center;
       }
     }
     &-link {

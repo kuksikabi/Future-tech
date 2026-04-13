@@ -4,8 +4,20 @@
 @use "./utils";
 @use "./globals";
 
-@use 'blocks/icon';
-@use 'blocks/logo';
-@use 'blocks/button';
-@use 'blocks/header';
-@use 'blocks/burger-button';
+@use "blocks/icon";
+@use "blocks/logo";
+@use "blocks/button";
+@use "blocks/header";
+@use "blocks/burger-button";
+@use "blocks/budge";
+@use "blocks/soc1als";
+@use "blocks/footer";
+@use "blocks/hero";
+@use "blocks/metrics";
+@use "blocks/resources-preview";
+@use "blocks/team";
+@use "blocks/advantage-card";
+// .header,
+// .footer {
+//   display: none !important;
+// }
