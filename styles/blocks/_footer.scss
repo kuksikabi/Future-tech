@@ -36,6 +36,17 @@
         }
       }
     }
+    &-link.button {
+      padding: rem(10) rem(16);
+      border-radius: rem(8);
+      row-gap: rem(18);
+
+      @include laptop {
+        padding: rem(6) rem(12);
+        border-radius: rem(6);
+        row-gap: rem(18);
+      }
+    }
     &-main-link {
       font-weight: 500;
     }

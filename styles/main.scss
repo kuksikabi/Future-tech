@@ -9,15 +9,39 @@
 @use "blocks/button";
 @use "blocks/header";
 @use "blocks/burger-button";
+
 @use "blocks/budge";
 @use "blocks/soc1als";
 @use "blocks/footer";
+
 @use "blocks/hero";
 @use "blocks/metrics";
 @use "blocks/resources-preview";
 @use "blocks/team";
 @use "blocks/advantage-card";
+
+@use "blocks/tile";
+@use "blocks/card";
+@use "blocks/section";
+@use "blocks/tag";
+@use "blocks/list";
+
+@use "blocks/tabs";
+@use "blocks/blog-actions";
+@use "blocks/person-card";
+@use "blocks/blog-card";
+
+@use "blocks/download-info";
+
+@use "blocks/review-card";
+@use "blocks/bordered-grid";
+@use "blocks/rating-view";
+
+@use "blocks/about-card";
+@use "blocks/about";
+
 // .header,
-// .footer {
+// .footer,
+// section:not(:last-child) {
 //   display: none !important;
 // }

@@ -14,7 +14,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
     @include laptop {
       --size: #{rem(20)};
     }
@@ -24,4 +24,10 @@
       background-image: url("../../icons/arrow-top-right__yellow.svg");
     }
   }
+  &--yellow-eye {
+    &::after {
+      background-image: url(../../icons/yellow-eye.svg);
+    }
+  }
+  
 }
