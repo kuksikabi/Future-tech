@@ -21,4 +21,31 @@
       --size: #{rem(20)};
     }
   }
+  &--3-cols {
+    width: 100%;
+    .soc1als {
+      
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: rem(10);
+
+        @include laptop {
+          column-gap: rem(10);
+        }
+      }
+
+      &__link {
+        width: 100%;
+        @include flex-center;
+        height: rem(60);
+        background-color: var(--color-dark-10);
+        border: var(--border);
+        border-radius: rem(6);
+        @include laptop {
+          height: rem(48);
+        }
+      }
+    }
+  }
 }

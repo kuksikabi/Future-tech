@@ -36,4 +36,36 @@
     position: relative;
     color: var(--color-accent);
   }
+
+  &.metrics--4-cols {
+    .metrics__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .metrics__item {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      @include mobile {
+        border-bottom: var(--border);
+        border-inline: var(--border);
+        &:nth-child(1),
+        &:nth-child(3) {
+          margin-right: 0;
+        }
+        &:nth-child(2),
+        &:nth-child(4) {
+          margin-left: 0;
+        }
+        margin-inline: -1rem;
+      }
+    }
+    @include mobile-above {
+      @include full-vw-line-center(bottom);
+    }
+  }
 }

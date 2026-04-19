@@ -60,11 +60,19 @@
   height: $size;
 }
 
-@mixin full-vw-line-center($property: top) {
+@mixin full-vw-line-center(
+  $property: top,
+  $left: 50%,
+  $right: auto,
+  $translate: -50%
+) {
   position: relative;
 
   &::before {
-    @include abs-x();
+    position: absolute;
+    left: $left;
+    right: $right;
+    translate: $translate ;
 
     content: "";
     #{$property}: 0;

@@ -1,0 +1,31 @@
+@use "../helpers" as *;
+
+.image-card {
+  &__image {
+    border-radius: rem(12);
+    width: 100%;
+    object-fit: cover;
+    height: rem(290);
+
+    @include laptop{
+        border-radius: rem(10);
+    }
+    @include mobile {
+      height: rem(223);
+    }
+  }
+  &__links {
+    display: flex;
+
+    column-gap: rem(20);
+    width: 100%;
+    @include laptop {
+      column-gap: rem(10);
+    }
+  }
+  &__link {
+
+      width: 100%;
+    
+  }
+}

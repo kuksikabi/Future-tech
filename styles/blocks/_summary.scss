@@ -1,0 +1,51 @@
+@use "../helpers" as *;
+
+.summary {
+  &--2-cols {
+    @include mobile {
+       @include full-vw-line-center(bottom)
+      
+    }
+    .summary {
+      &__list {
+        padding-block: fluid(80, 40);
+        padding-inline: rem(80);
+        gap: rem(30) rem(20);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include laptop {
+          row-gap: rem(20);
+          padding-inline: rem(60);
+        }
+        @include mobile {
+          padding-inline: 0;
+        }
+      }
+
+      &__item {
+        &--wide {
+          grid-column: -1 / 1;
+          margin-top: rem(20);
+        }
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(50, 20);
+  }
+
+  &__item {
+    display: grid;
+    row-gap: rem(4);
+
+    @include laptop {
+      row-gap: rem(2);
+    }
+  }
+  &__value {
+    color: var(--color-light);
+  }
+}
