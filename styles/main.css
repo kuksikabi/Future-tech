@@ -2365,7 +2365,7 @@ button[aria-label]::before {
 }
 
 .blog-details__banner {
-  --bgImg: url(../../images/blog-details/1.jpg);
+  --bgImg: url(../images/blog-details/1.jpg);
   display: flex;
   align-items: end;
   min-height: clamp(17.5625rem, 12.512254902rem + 20.7189542484vw, 37.375rem);
@@ -2681,7 +2681,7 @@ button[aria-label]::before {
   width: var(--size);
   height: var(--size);
   content: "";
-  background: url(../icons/arrow-down__white.svg) center/contain no-repeat;
+  background: url(../../icons/arrow-down__white.svg) center/contain no-repeat;
   transition-duration: var(--transition-duration);
 }
 @media (width <= 90.06125rem) {
