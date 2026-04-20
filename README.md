@@ -1,5 +1,5 @@
 # Future Tech — Многостраничный адаптивный сайт
-
+🔗 **Figma | Page**: [Click](https://www.figma.com/design/YzTDRV7OaSoeCUBNYaoCZV/FutureTech?node-id=18-214&m=dev&t=AJuMASi8depZh1n0-1)
 ![Future Tech Screenshot](./image-for-github/main.jpeg)
 
 **Future Tech** — это высокотехнологичный многостраничный проект (6 страниц), посвященный теме искусственного интеллекта. Сайт разработан с акцентом на "чистый код", максимальную декомпозицию и создание универсальных переиспользуемых компонентов без применения сторонних фреймворков.
