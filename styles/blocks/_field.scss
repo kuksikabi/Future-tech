@@ -18,7 +18,7 @@
     display: flex;
     width: 100%;
     column-gap: 1rem;
-
+    align-items: center;
     @include laptop {
       column-gap: rem(12);
     }
@@ -41,6 +41,11 @@
     &::placeholder {
       color: var(--color-dark-40);
     }
+
+    &:user-invalid {
+      border-color: var(--color-red);
+    }
+    
     @include laptop {
       height: rem(53);
       padding: 1rem;

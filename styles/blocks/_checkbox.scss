@@ -45,5 +45,9 @@
       color: var(--color-light);
       transition-duration: var(--transition-duration);
     }
+
+    &:user-invalid {
+      border-color: var(--color-red);
+    }
   }
 }

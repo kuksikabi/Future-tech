@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Future Tech | Contacts</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js"
+      defer
+    ></script>
     <script src="./scripts/main.js" type="module" defer></script>
   </head>
   <body>
@@ -34,7 +38,7 @@
             <nav class="header__menu">
               <ul class="header__menu-list">
                 <li class="header__menu-item">
-                  <a class="header__menu-link is-active" href="/">Home</a>
+                  <a class="header__menu-link" href="/">Home</a>
                 </li>
                 <li class="header__menu-item">
                   <a class="header__menu-link" href="./news.html">News</a>
@@ -126,7 +130,7 @@
                     Address: 123 AI Tech Avenue, Techville, 54321
                   </address>
                   <a
-                    href="/"
+                    href="./contacts.html"
                     class="contacts-card__link button button--dark-gray"
                     ><span class="icon icon--yellow-arrow">
                       Get Directions</span
@@ -286,11 +290,100 @@
                         >Phone Number</label
                       >
                       <div class="field__body">
-                        <div class="select">SELECT</div>
+                        <div class="select" data-js-select>
+                          <label
+                            class="select__label visually-hidden"
+                            id="phone-number=prefix-select-label"
+                            for="phoneNumberPrefix"
+                            >Phone number prefix</label
+                          >
+                          <select
+                            class="select__original-control field__control"
+                            id="phoneNumberPrefix"
+                            tabindex="-1"
+                            data-js-select-original-control
+                          >
+                            <option
+                              class="select__option is-selected"
+                              value="+7"
+                              selected
+                            >
+                              +7
+                            </option>
+                            <option class="select__option" value="+1">
+                              +1
+                            </option>
+                            <option class="select__option" value="+2">
+                              +2
+                            </option>
+                            <option class="select__option" value="+3">
+                              +3
+                            </option>
+                          </select>
+                          <div class="select__body">
+                            <div
+                              class="select__button field__control"
+                              tabindex="0"
+                              role="combobox"
+                              aria-expanded="false"
+                              aria-haspopup="listbox"
+                              aria-controls="phone-number-prefix-select-dropdown"
+                              aria-labelledby="phone-number=prefix-select-label"
+                              data-js-select-button
+                            >
+                              +7
+                            </div>
+                            <div
+                              class="select__dropdown"
+                              role="listbox"
+                              id="phone-number-prefix-select-dropdown"
+                              aria-labelledby="phone-number=prefix-select-label"
+                              data-js-select-dropdown
+                            >
+                              <div
+                                class="select__option is-selected is-current"
+                                id="phone-number-prefix-select-option-1"
+                                role="option"
+                                aria-selected="true"
+                                data-js-select-option
+                              >
+                                +7
+                              </div>
+                              <div
+                                class="select__option"
+                                id="phone-number-prefix-select-option-2"
+                                role="option"
+                                aria-selected="false"
+                                data-js-select-option
+                              >
+                                +1
+                              </div>
+                              <div
+                                class="select__option"
+                                id="phone-number-prefix-select-option-3"
+                                role="option"
+                                aria-selected="false"
+                                data-js-select-option
+                              >
+                                +2
+                              </div>
+                              <div
+                                class="select__option"
+                                id="phone-number-prefix-select-option-4"
+                                role="option"
+                                aria-selected="false"
+                                data-js-select-option
+                              >
+                                +3
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <input
                           class="field__control"
                           id="phoneNumber"
                           placeholder="(999) 999-99-99"
+                          data-js-input-mask="(000) 000-00-00"
                         />
                       </div>
                     </div>
@@ -349,9 +442,7 @@
                       loading="lazy"
                     />
                     <div class="card__preview-info">
-                      <h2 class="card__preview-title h3">
-                        Get in Touch with AI Podcasts
-                      </h2>
+                      <h2 class="card__preview-title h3">Asked question</h2>
                       <div class="card__preview-decription">
                         <p>
                           If the question is not available on our FAQ section,
@@ -359,9 +450,12 @@
                           your respective doubts.
                         </p>
                       </div>
-                      <div class="card__preview-link button button--dark-gray">
+                      <a
+                        class="card__preview-link button button--dark-gray"
+                        href="./contacts.html"
+                      >
                         <span class="icon icon--yellow-arrow">Ask Qustion</span>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -509,6 +603,69 @@
           </div>
         </div>
       </section>
+      <section class="about" aria-labelledby="about-title">
+        <div class="about__inner container">
+          <header class="about__header">
+            <img
+              src="./images/about/icon.svg"
+              alt=""
+              class="about__icon"
+              loading="lazy"
+              width="150"
+              height="150"
+            />
+            <div class="about__info">
+              <p class="about__subtitle tag">Learn, Connect, and Innovate</p>
+              <h2 class="about__title" id="about-title">
+                Be Part of the Future Tech Revolution
+              </h2>
+            </div>
+            <div class="about__description">
+              <p>
+                Immerse yourself in the world of future technology. Explore our
+                comprehensive resources, connect with fellow tech enthusiasts,
+                and drive innovation in the industry. Join a dynamic community
+                of forward-thinkers.
+              </p>
+            </div>
+          </header>
+          <ul class="about__list">
+            <li class="about__item">
+              <a href="./resources.html" class="about-card tile">
+                <h3 class="about-card__title circle-icon">Resource Access</h3>
+                <div class="about-card__description">
+                  <p>
+                    Visitors can access a wide range of resources, including
+                    ebooks, whitepapers, reports.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="about__item">
+              <a href="./contacts.html" class="about-card tile">
+                <h3 class="about-card__title circle-icon">Community Forum</h3>
+                <div class="about-card__description">
+                  <p>
+                    Join our active community forum to discuss industry trends
+                    and collaborate with peers.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="about__item">
+              <a href="./news.html" class="about-card tile">
+                <h3 class="about-card__title circle-icon">Tech Events</h3>
+                <div class="about-card__description">
+                  <p>
+                    Stay updated on upcoming tech events, webinars and
+                    conferences to enhance your knowledge.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__inner container">
@@ -542,22 +699,28 @@
               <a href="./news.html" class="footer__menu-main-link h6">News</a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Trending Stories</a>
+                  <a href="./news.html" class="footer__menu-link"
+                    >Trending Stories</a
+                  >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Featured Videos</a>
+                  <a href="./news.html" class="footer__menu-link"
+                    >Featured Videos</a
+                  >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Technology</a>
+                  <a href="./news.html" class="footer__menu-link">Technology</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Health</a>
+                  <a href="./news.html" class="footer__menu-link">Health</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Politics</a>
+                  <a href="./news.html" class="footer__menu-link">Politics</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Environment</a>
+                  <a href="./news.html" class="footer__menu-link"
+                    >Environment</a
+                  >
                 </li>
               </ul>
             </div>
@@ -565,64 +728,84 @@
               <a href="./blog.html" class="footer__menu-main-link h6">Blogs</a>
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Quantum Computing</a>
+                  <a href="./blog.html" class="footer__menu-link"
+                    >Quantum Computing</a
+                  >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">AI Ethics</a>
+                  <a href="./blog.html" class="footer__menu-link">AI Ethics</a>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Space Exploration</a>
+                  <a href="./blog.html" class="footer__menu-link"
+                    >Space Exploration</a
+                  >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Biotechnology</a>
+                  <a href="./blog.html" class="footer__menu-link"
+                    >Biotechnology</a
+                  >
                   <span class="badge">New</span>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Renewable Energy</a>
+                  <a href="./blog.html" class="footer__menu-link"
+                    >Renewable Energy</a
+                  >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">Biohacking</a>
+                  <a href="./blog.html" class="footer__menu-link">Biohacking</a>
                 </li>
               </ul>
             </div>
             <div class="footer__menu-column">
-              <a href="/" class="footer__menu-main-link h6">Podcasts</a>
+              <a href="./podcasts.html" class="footer__menu-main-link h6"
+                >Podcasts</a
+              >
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">AI Revolution</a>
+                  <a href="./podcasts.html" class="footer__menu-link"
+                    >AI Revolution</a
+                  >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">AI Revolution</a>
+                  <a href="./podcasts.html" class="footer__menu-link"
+                    >AI Revolution</a
+                  >
                   <span class="badge">New</span>
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">TechTalk AI</a>
+                  <a href="./podcasts.html" class="footer__menu-link"
+                    >TechTalk AI</a
+                  >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link">AI Conversations</a>
+                  <a href="./podcasts.html" class="footer__menu-link"
+                    >AI Conversations</a
+                  >
                 </li>
               </ul>
             </div>
             <div class="footer__menu-column">
-              <a href="/" class="footer__menu-main-link h6">Resources</a>
+              <a href="./resources.html" class="footer__menu-main-link h6"
+                >Resources</a
+              >
               <ul class="footer__menu-list">
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link button"
+                  <a href="./resources.html" class="footer__menu-link button"
                     ><span class="icon icon--yellow-arrow">Whitepapers</span></a
                   >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link button"
+                  <a href="./resources.html" class="footer__menu-link button"
                     ><span class="icon icon--yellow-arrow">Ebooks</span></a
                   >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link button"
+                  <a href="./resources.html" class="footer__menu-link button"
                     ><span class="icon icon--yellow-arrow">Reports</span></a
                   >
                 </li>
                 <li class="footer__menu-item">
-                  <a href="/" class="footer__menu-link button"
+                  <a href="./resources.html" class="footer__menu-link button"
                     ><span class="icon icon--yellow-arrow"
                       >Research Papers</span
                     ></a

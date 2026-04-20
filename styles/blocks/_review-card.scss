@@ -4,19 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: start;
   row-gap: rem(40);
   max-width: rem(500);
   margin-inline: auto;
-
+height: 100%;
   @include laptop {
     row-gap: rem(30);
   }
   &__body {
     position: relative;
     text-align: center;
+    align-self: start;
     color: var(--color-light);
     padding: rem(50) rem(30);
-
+    flex-grow: 1;
     @include laptop {
       padding: rem(40) rem(24);
     }
